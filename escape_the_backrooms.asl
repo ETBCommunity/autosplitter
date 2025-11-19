@@ -45,6 +45,7 @@ update
         vars.LoadingState = false;
         vars.HasExited = false;
     }
+    if (old.LoadingFromRestart != current.LoadingFromRestart) vars.WasEnding = false;
 }
 
 split
