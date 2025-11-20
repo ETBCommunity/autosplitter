@@ -32,8 +32,8 @@ Autosplitters can use a good deal processing power, which may result in a declin
 7. Right click on LiveSplit and set the "Compare Against" to "Game Time".
 
 ### Manual Installation
-1. Download [uhara9](https://github.com/ru-mii/uhara/blob/main/bin/uhara9).
-2. Put the downloaded file into "Livesplit/Components" folder.
+1. Download [uhara9](https://github.com/ru-mii/uhara/raw/refs/heads/main/bin/uhara9).
+2. Put the downloaded file into "LiveSplit\Components" folder.
 3. Download "escape_the_backrooms.asl" from the [Releases](https://github.com/ETBCommunity/autosplitter/releases) page.
 4. Right click anywhere in the LiveSplit window -> Edit Layout
 5. Click on the + button in the top left of the window, and go into Control > Scriptable Autosplitter
