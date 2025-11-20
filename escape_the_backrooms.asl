@@ -1,3 +1,46 @@
+/*
+Escape the Backrooms Autosplitter for Update 5 by Reokin
+Based on uhara by ru-mii (https://github.com/ru-mii/uhara)
+
+Big thanks to Nikoheart and ru-mii for help!
+
+Version history:
+
+==Version 3.0==
+    Game versions: 5.0+
+    By Reokin
+
+==Version 2.0==
+    Game versions: 1.21-4.5
+	Fully reworked by theframeburglar
+
+==Version 1.4==
+    Game versions: 4.0-4.5
+	Variables for 4.0+ found by Reokin
+        Thanks to theframeburglar for teaching me how to do it!
+
+==Version 1.3==
+    Game versions: 3.0-3.13
+==Version 1.2==
+    Game versions: 3.0-3.11
+==Version 1.1==
+    Game versions: 3.0-3.10
+	By Permamiss & HeXaGoN
+		3.0 - 3.9 variables updated to work with newer versions by theframeburglar
+
+==Version 1.0==
+    Game versions: 3.0-3.9
+	By Permamiss & HeXaGoN
+		isLoading1, wasLoading1 variables found by HeXaGoN
+		isLoading2, wasLoading2, multiplayer variables found by Permamiss
+
+	    Shoutouts to Xero for consulting, and to Shad0w & for being our Fancy messenger!
+
+==Version 0.1==
+    Game versions: 2.3, 2.9
+	By Xero
+*/
+
 state("Backrooms-Win64-Shipping") {}
 
 startup
@@ -6,7 +49,7 @@ startup
 
 	Assembly.Load(File.ReadAllBytes("Components/uhara9")).CreateInstance("Main");
     vars.Uhara.AlertLoadless();
-    vars.Uhara.EnableDebug();
+    //vars.Uhara.EnableDebug();
 
     vars.HasStarted = false;
     vars.HasExited = false;
