@@ -34,7 +34,7 @@ Autosplitters can use a good deal processing power, which may result in a declin
 ### Manual Installation
 1. Download [uhara9](https://github.com/ru-mii/uhara/blob/main/bin/uhara9).
 2. Put the downloaded file into "Livesplit/Components" folder.
-3. Download from the [Releases](https://github.com/ETBCommunity/autosplitter/releases) page.
+3. Download "escape_the_backrooms.asl" from the [Releases](https://github.com/ETBCommunity/autosplitter/releases) page.
 4. Right click anywhere in the LiveSplit window -> Edit Layout
 5. Click on the + button in the top left of the window, and go into Control > Scriptable Autosplitter
 6. Double click on the Scriptable Autosplitter, which should open a dialog.
