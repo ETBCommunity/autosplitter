@@ -8,22 +8,13 @@ Big thanks to Nikoheart and ru-mii for help!
 ## Features
 
 - Auto start
-- Auto split on
--- Level transitions
--- Cutscenes
-- Load removal for
--- Level transitions
--- Restarts
-- Time pause in
--- Cutscenes
--- Main menu
--- If the game craashes
-- Auto timer reset in The Hub gamemode when
--- Returning to lobby
--- Dying
+- Auto split on level transitions and cutscenes
+- Load removal for level transitions and restarts
+- Time pause in cutscenes, main menu or if the game craashes
+- Auto timer reset in The Hub gamemode when returning to lobby or dying
 
 ## Known issues
-- Auto reset in The Hub gamemode doesn't work if host dies before other players in Co-op. Unfortunately, there might not be a fix for this.
+- Auto reset in The Hub gamemode doesn't work if host dies before other players in Co-op. Unfortunately, there might not be a fix for this issue.
 
 ## Installation & Usage
 Autosplitters can use a good deal processing power, which may result in a decline of game and/or overall system performance. Use at your own risk.
@@ -42,8 +33,8 @@ Autosplitters can use a good deal processing power, which may result in a declin
 7. Right click on LiveSplit and set the "Compare Against" to "Game Time".
 
 ### Manual Installation
-1. Download uhara9 from [here](https://github.com/ru-mii/uhara/blob/main/bin/uhara9).
-2. Put the downloaded file into "Livesplit/Components" folder
+1. Download [uhara9](https://github.com/ru-mii/uhara/blob/main/bin/uhara9).
+2. Put the downloaded file into "Livesplit/Components" folder.
 3. Download from the [Releases](https://github.com/ETBCommunity/autosplitter/releases) page.
 4. Right click anywhere in the LiveSplit window -> Edit Layout
 5. Click on the + button in the top left of the window, and go into Control > Scriptable Autosplitter
