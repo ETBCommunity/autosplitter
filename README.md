@@ -3,10 +3,9 @@ Supports versions 5.0+ (1.0+ in-game)
 
 Based on [uhara by ru-mii](https://github.com/ru-mii/uhara)
 
-Big thanks to Nikoheart and ru-mii for help!
+Credits and version history can be found in [escape_the_backrooms.asl](https://github.com/ETBCommunity/autosplitter/blob/main/escape_the_backrooms.asl)
 
 ## Features
-
 - Auto start
 - Auto split on level transitions and cutscenes
 - Load removal for level transitions and restarts
