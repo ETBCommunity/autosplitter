@@ -45,11 +45,11 @@ state("Backrooms-Win64-Shipping") {}
 
 startup
 {
-    //settings.Add("hub_auto_reset", false, "The Hub mode automatic reset");
-
 	Assembly.Load(File.ReadAllBytes("Components/uhara9")).CreateInstance("Main");
     vars.Uhara.AlertLoadless();
     //vars.Uhara.EnableDebug();
+
+    settings.Add("hub_auto_reset", false, "The Hub mode automatic reset");
 
     vars.HasStarted = false;
     vars.HasExited = false;
@@ -60,8 +60,6 @@ init
 	vars.Events = vars.Uhara.CreateTool("UnrealEngine", "Events");
     vars.Resolver.Watch<ulong>("LoadingStart", vars.Events.FunctionFlag("WB_LoadingScreen_C", "WB_LoadingScreen_C", "PreConstruct"));
     vars.Resolver.Watch<ulong>("LoadingFromRestart", vars.Events.FunctionFlag("MP_PlayerController_C", "MP_PlayerController_C", "ServerNotifyLoadedWorld"));
-    //vars.Resolver.Watch<ulong>("LoadingFinish", vars.Events.FunctionFlag("MP_PlayerController_C", "MP_PlayerController_C", "ClientRestart"));
-    //vars.Resolver.Watch<ulong>("LoadingFinish2", vars.Events.FunctionFlag("MP_PlayerController_C", "MP_PlayerController_C", "ServerAcknowledgePossession"));
     vars.Resolver.Watch<ulong>("LoadingFinish", vars.Events.FunctionFlag("", "", "ChoosePlayerStart"));
     vars.Resolver.Watch<ulong>("LoadingFinish2", vars.Events.FunctionFlag("MP_PlayerController_C", "MP_PlayerController_C", "ClientGotoState"));
     vars.Resolver.Watch<ulong>("LoadingEnding", vars.Events.FunctionFlag("", "", "ExecuteUbergraph_BP_ExitZone_GameEnding"));
@@ -111,8 +109,8 @@ split
 
 reset
 {
-    //if ((settings["hub_auto_reset"]) && (((old.ReturnedToLobby != current.ReturnedToLobby) || (old.Death != current.Death)) && (old.LoadingStart != current.LoadingStart))) return true;
-    if (((old.ReturnedToLobby != current.ReturnedToLobby) || (old.Death != current.Death)) && (old.LoadingStart != current.LoadingStart)) return true;
+    if ((settings["hub_auto_reset"]) && (((old.ReturnedToLobby != current.ReturnedToLobby) || (old.Death != current.Death)) && (old.LoadingStart != current.LoadingStart))) return true;
+    //if (((old.ReturnedToLobby != current.ReturnedToLobby) || (old.Death != current.Death)) && (old.LoadingStart != current.LoadingStart)) return true;
 }
 
 isLoading
