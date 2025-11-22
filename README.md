@@ -10,10 +10,16 @@ Credits and version history can be found in [escape_the_backrooms.asl](https://g
 - Auto split on level transitions and cutscenes
 - Load removal for level transitions and restarts
 - Time pause in cutscenes, main menu or if the game craashes
-- Auto timer reset in The Hub gamemode when returning to lobby or dying
+- Auto timer reset in The Hub gamemode when returning to lobby or dying (disabled by default)
+
+## Important
+- Auto reset in The Hub gamemode can be enabled in the autosplitter settings.
+- Only host needs to have the autosplitter on. It works for non-hosts but it's not accurate.
+- Sometimes when loading the autosplitter for the first time it doesn't work. relaunch the game and livesplit to fix this. This is due to Livesplit sometimes failing to download the needed component.
 
 ## Known issues
 - Auto reset in The Hub gamemode doesn't work if host dies before other players in Co-op. Unfortunately, there might not be a fix for this issue.
+- The game will often crash if you have any mods installed. This is due to incompability with uhara.
 
 ## Installation & Usage
 Autosplitters can use a good deal processing power, which may result in a decline of game and/or overall system performance. Use at your own risk.

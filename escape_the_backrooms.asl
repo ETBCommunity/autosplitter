@@ -60,12 +60,11 @@ init
 	vars.Events = vars.Uhara.CreateTool("UnrealEngine", "Events");
     vars.Resolver.Watch<ulong>("LoadingStart", vars.Events.FunctionFlag("WB_LoadingScreen_C", "WB_LoadingScreen_C", "PreConstruct"));
     vars.Resolver.Watch<ulong>("LoadingFromRestart", vars.Events.FunctionFlag("MP_PlayerController_C", "MP_PlayerController_C", "ServerNotifyLoadedWorld"));
-    vars.Resolver.Watch<ulong>("LoadingFinish", vars.Events.FunctionFlag("", "", "ChoosePlayerStart"));
-    vars.Resolver.Watch<ulong>("LoadingFinish2", vars.Events.FunctionFlag("MP_PlayerController_C", "MP_PlayerController_C", "ClientGotoState"));
+    vars.Resolver.Watch<ulong>("LoadingFinish", vars.Events.FunctionFlag("MP_PlayerController_C", "MP_PlayerController_C", "ClientGotoState"));
     vars.Resolver.Watch<ulong>("LoadingEnding", vars.Events.FunctionFlag("", "", "ExecuteUbergraph_BP_ExitZone_GameEnding"));
     vars.Resolver.Watch<ulong>("ReturnedToLobby", vars.Events.FunctionFlag("WB_Button_RestartGame_C", "WB_Button_RestartGame_C", "BndEvt__WB_Button_Close_Button_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature"));
     vars.Resolver.Watch<ulong>("Death", vars.Events.FunctionFlag("GameEnd_UI_2_C", "GameEnd_UI_2_C", "PreConstruct"));
-    vars.Resolver.Watch<ulong>("MainMenu", vars.Events.FunctionFlag("MP_PlayerController_C", "MP_PlayerController_C", "ReceiveEndPlay"));
+    vars.Resolver.Watch<ulong>("MainMenu", vars.Events.FunctionFlag("CheatManager", "CheatManager", "ReceiveInitCheatManager"));
 
     vars.WasEnding = false;
 	vars.LoadingState = true;
@@ -85,7 +84,7 @@ update
 
 	if ((old.LoadingStart != current.LoadingStart) || (old.LoadingFromRestart != current.LoadingFromRestart) || (old.MainMenu != current.MainMenu) || (old.LoadingEnding != current.LoadingEnding)) vars.LoadingState = true;
     if (old.MainMenu != current.MainMenu) vars.HasExited = true;
-    if (((old.LoadingFinish != current.LoadingFinish) && (old.LoadingFinish2 != current.LoadingFinish2)) && vars.LoadingState) {
+    if ((old.LoadingFinish != current.LoadingFinish) && vars.LoadingState) {
         vars.LoadingState = false;
         vars.HasExited = false;
     }
