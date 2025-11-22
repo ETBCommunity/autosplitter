@@ -5,6 +5,8 @@ Based on [uhara by ru-mii](https://github.com/ru-mii/uhara)
 
 Credits and version history can be found in [escape_the_backrooms.asl](https://github.com/ETBCommunity/autosplitter/blob/main/escape_the_backrooms.asl)
 
+Old autosplitter for versions 1.21-4.5 by theframeburglar is available [here](https://github.com/jonetiz/ETB-Autosplitter). To get it in LiveSplit, use the name "Escape the Backrooms (Legacy)" in the automatic installation section.
+
 ## Features
 - Auto start
 - Auto split on level transitions and cutscenes
