@@ -11,16 +11,16 @@ Old autosplitter for versions 1.21-4.5 by theframeburglar is available [here](ht
 - Auto start
 - Auto split on level transitions and cutscenes
 - Load removal for level transitions and restarts
-- Time pause in cutscenes, main menu or if the game craashes
+- Time pause in cutscenes, main menu or if the game crashes
 - Auto timer reset in The Hub gamemode when returning to lobby, dying or clicking "Continue" after completing the level
 
 ## Important
 - Only host needs to have the autosplitter on. It works for non-hosts but it's not accurate and buggy.
 - Sometimes when enabling the autosplitter for the first time it doesn't work. Relaunch the game and livesplit to fix. This is due to Livesplit sometimes failing to download the needed component.
+- The game will often crash if you have any mods installed. This is due to an incompatibility with uhara.
 
 ## Known issues
 - Auto reset in The Hub gamemode on death doesn't work properly in co-op. Unfortunately, there might not ever be a fix for this.
-- The game will often crash if you have any mods installed. This is due to an incompability with uhara.
 
 ## Installation & Usage
 Autosplitters can use a good deal processing power, which may result in a decline of game and/or overall system performance. Use at your own risk.
