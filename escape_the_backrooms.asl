@@ -91,8 +91,8 @@ update
     if ((old.LoadingFinish != current.LoadingFinish) && vars.LoadingState) {
         vars.LoadingState = false;
         vars.HasExited = false;
+        vars.WasEnding = false;
     }
-    if (old.RestartLevel != current.RestartLevel) vars.WasEnding = false;
 }
 
 split
