@@ -42,6 +42,7 @@ Version history:
 */
 
 state("Backrooms-Win64-Shipping") {}
+state("Backrooms-WinGDK-Shipping") {}
 
 startup
 {
